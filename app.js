@@ -80,6 +80,9 @@ const upload=multer({
 //const upload=multer({dest:'./public/uploads/pics'});
 const auth = require('./api/v1/middlewares/auth');
 const authS = require('./api/v1/middlewares/authS');
+app.head('/',(req,res)=>{
+    res.status(200).send('up');
+});
 app.use(morgan('dev')); // הוספת השכבה דמורגן שמטפלת בתיעוד הבקדות בקונסול
 app.use(cors());//הוספת שכבת הבייניפ שך קורס גישה ממקורות חיצוניים בפורמט אגקס
 app.use(express.json());//שכבה המטפלת בפורמט גייסון
