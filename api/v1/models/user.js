@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');//חיבור לסיפרייה מונגוס
 mongoose.pluralize(null);//ביטול פנייה לטבלאות בלשון רבים באהגלית באוספת האות אס באנגלית אוטומטית 
 //הגדרת סכימה עבור האוסף של המוצרים
-var productSchema = mongoose.Schema({
+var UserSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
-    pid: Number,
-    pname: String,
-    price: Number,
-    picName:String
+    uid: Number,
+    emsil: String,
+    pass: Number
 });
-module.exports = mongoose.model('Product', productSchema)//יצירת החיבור לאוסף המוצרים
+module.exports = mongoose.model('user', userSchema)//יצירת החיבור לאוסף המוצרים
 

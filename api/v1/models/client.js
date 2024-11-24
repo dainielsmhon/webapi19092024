@@ -7,4 +7,4 @@ var clientSchema = mongoose.Schema({
     fname: String,
     lname: String
 });
-module.exports = mongoose.model('cilent', clientSchema)//יצירת חיבור לclient
+module.exports = mongoose.model('client', clientSchema)//יצירת חיבור לclient

@@ -1,6 +1,6 @@
 const productModel = require('../models/product');
 module.exports = {
-    getAllProducts: (req, res) => {
+    getAllProduct: (req, res) => {
         productModel.find().then((prods) => {
             console.log(prods);
             return res.status(200).json(prods);
